@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Todo List</h1>
+    <form action="{{url_for('add_task')}}" method="post" >
+        <input id="todo-input" type="text" 
+            placeholder="write anything and hit enter to add" autocomplete="off" name="name">
+            <button type="submit">Add</button>
+
+
+    </form>
+    <table>
+        <th>todo</th>
+        {% for todo in todos %}
+        <tr>
+            <td>{{ todo['name'] }}</td>
+            <td>
+                <a href="{{ url_for('delete_by_id', id=todo['id']) }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+       
+    
+
+    </table>
+</body>
+</html>

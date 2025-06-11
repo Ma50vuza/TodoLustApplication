@@ -12,7 +12,7 @@ body {
 .container {
     background: #fff;
     padding: 32px 40px;
-    width: 420px;
+    width: 480px;
     border-radius: 16px;
     box-shadow: 0 4px 32px rgba(0,0,0,0.08);
 }
@@ -25,7 +25,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #b80e0e;
+    color: #000000;
     margin-bottom: 16px;
     text-decoration: underline;
     font-weight: 600;
@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #b80e0e;
+    color: #000000;
     margin: 24px 0 12px 0;
     font-size: 1.2em;
     font-weight: 500;
@@ -62,7 +62,7 @@ form {
 
 button {
     padding: 10px 18px;
-    background-color: #0e58b870;
+    background-color: rgb(57, 57, 247);
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -83,7 +83,7 @@ ul {
 
 li {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     background: #f7f7fa;
     padding: 10px 12px;
@@ -100,7 +100,7 @@ li input[type="text"] {
     border: none;
     background: transparent;
     font-size: 1em;
-    width: 140px;
+    width: 315px;
     padding: 4px 8px;
     border-radius: 4px;
     transition: background 0.2s;

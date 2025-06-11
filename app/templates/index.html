@@ -21,7 +21,7 @@
      {% for todo in todos %}
     <ul>
         <li>
-            <form method="post" action="/update/{{ todo['id'] }}" style="display:inline;">
+            <form method="post" action="/update/{{ todo['id'] }}" style="display:flex;">
             <input type="text" name="name" value="{{ todo['name'] }}" required>
             <button type="submit">Edit</button>
             </form>

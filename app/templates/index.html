@@ -7,12 +7,12 @@
     <title>Todo List App</title>   
 </head>
 <body>
-        <p style="background-image: url('pic_trulli.jpg');">
+        <div class="header">
         <div class="container"> 
         <div class="image-container">
             <img src="{{ url_for('static', filename='styles/sanele.jpg') }}" alt="Person smiling at desk with a notebook and pen, workspace includes a laptop and coffee mug, bright and welcoming atmosphere" class="todo-image" style="border-radius: 50%;">
     </div>
-        <h1>My Todo App</h1> 
+        <h1>Welcome to your personal todo list app!</h1> 
        
         <form method="post" action="/add">
     <input type="text" name="name" placeholder="Add new task" class="input-text" required>
@@ -33,6 +33,6 @@
     </ul> 
      {% endfor %} 
  </div>
-</p>  
+</div>  
 </body>
 </html>

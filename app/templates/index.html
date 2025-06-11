@@ -7,17 +7,13 @@
     <title>Todo List App</title>   
 </head>
 <body>
-    <div class="container">
-        <h1>My Todo App</h1> 
-        <div class="input-text">
+    <h1>My Todo App</h1> 
+        <div class="container">
+        <form method="post">
         <input type="text" name="name" placeholder="Add new task" required>
-        <button type="submit">Add</button>
-        </div>
+        <button type="submit" id="add-task-button">Add</button>
+        </form>
         <h2>Todo-Tasks</h2>
-    <div class="todos-container">
-        <ul id="todos-list"></ul>
-   
-
      {% for todo in todos %}
     <ul>
         <li>
@@ -32,7 +28,6 @@
     </ul> 
      {% endfor %} 
  </div>
-</div>
     
 </body>
 </html>

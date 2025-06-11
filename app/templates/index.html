@@ -7,12 +7,16 @@
     <title>Todo List App</title>   
 </head>
 <body>
-    <h1>My Todo App</h1> 
-        <div class="container">
-        <form method="post">
-        <input type="text" name="name" placeholder="Add new task" required>
-        <button type="submit" id="add-task-button">Add</button>
-        </form>
+        <div class="container"> 
+        <div class="upload">
+        <img src="{{ url_for('static', filename='img/img_girl.jpg') }}" alt="Young woman in a jacket stands smiling in a city street with soft natural light, relaxed and cheerful atmosphere, buildings and trees in the background" style="width:500px;height:600px;">
+    </div>
+        <h1>My Todo App</h1> 
+       
+        <form method="post" action="/add">
+    <input type="text" name="name" placeholder="Add new task" class="input-text" required>
+    <button type="submit" id="add-task-button">Add</button>
+</form>
         <h2>Todo-Tasks</h2>
      {% for todo in todos %}
     <ul>
